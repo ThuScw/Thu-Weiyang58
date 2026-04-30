@@ -1,6 +1,7 @@
-import { useEffect, useCallback } from "react";
-import { ChevronDown } from "lucide-react";
+import { useEffect, useCallback, useState } from "react";
+import { ChevronDown, Download, Loader2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { downloadImage } from "../../utils/download";
 
 interface GalleryItem {
   id: string;
@@ -29,6 +30,7 @@ export default function Lightbox({
   onPrev,
 }: LightboxProps) {
   const current = images[currentIndex];
+  const [isDownloading, setIsDownloading] = useState(false);
 
   const handleKey = useCallback(
     (e: KeyboardEvent) => {
@@ -49,6 +51,17 @@ export default function Lightbox({
       window.removeEventListener("keydown", handleKey);
     };
   }, [isOpen, handleKey]);
+
+  const handleDownload = async () => {
+    if (!current || isDownloading) return;
+    setIsDownloading(true);
+    try {
+      const ext = current.imagePath.split(".").pop() || "jpg";
+      await downloadImage(current.imagePath, `${current.title}.${ext}`);
+    } finally {
+      setIsDownloading(false);
+    }
+  };
 
   return (
     <AnimatePresence>
@@ -72,6 +85,18 @@ export default function Lightbox({
               <span className="text-white/50 text-xs bg-white/10 px-3 py-1 rounded-full">
                 {current.category}
               </span>
+              <button
+                onClick={handleDownload}
+                disabled={isDownloading}
+                className="p-2 text-white/60 hover:text-white hover:bg-white/10 rounded-full transition-colors disabled:opacity-50"
+                title="下载图片"
+              >
+                {isDownloading ? (
+                  <Loader2 size={20} className="animate-spin" />
+                ) : (
+                  <Download size={20} />
+                )}
+              </button>
               <button
                 onClick={onClose}
                 className="p-2 text-white/60 hover:text-white transition-colors rounded-full hover:bg-white/10"

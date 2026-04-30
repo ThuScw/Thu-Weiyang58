@@ -111,7 +111,7 @@ export default function HeroSection() {
           className="flex items-center justify-center gap-4 flex-wrap"
         >
           <a
-            href="/Thu-Weiyang58/achievements"
+            href="/achievements"
             className="group px-8 py-3.5 bg-white text-primary font-medium rounded-xl hover:bg-gray-50 transition-all duration-300 hover:shadow-xl hover:shadow-white/15 active:scale-95 inline-flex items-center gap-2"
           >
             班级成果
@@ -120,7 +120,7 @@ export default function HeroSection() {
             </svg>
           </a>
           <a
-            href="/Thu-Weiyang58/articles"
+            href="/articles"
             className="group px-8 py-3.5 border-2 border-white/25 text-white font-medium rounded-xl hover:bg-white/8 hover:border-white/40 transition-all duration-300 active:scale-95 inline-flex items-center gap-2"
           >
             专栏文章

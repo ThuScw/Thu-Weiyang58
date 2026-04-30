@@ -58,5 +58,15 @@
     "fileSize": 5242880,
     "fileType": "pptx",
     "uploadDate": "2025-09-15"
+  },
+  {
+    "id": "7",
+    "name": "清华大学学生手册",
+    "description": "清华大学官方学生手册（外部链接示例）",
+    "category": "其他",
+    "filePath": "https://www.tsinghua.edu.cn/__local/0/8A/12/StudentHandbook2025.pdf",
+    "fileSize": 2097152,
+    "fileType": "pdf",
+    "uploadDate": "2025-09-01"
   }
 ]

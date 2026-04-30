@@ -1,5 +1,7 @@
-import { Download } from "lucide-react";
+import { useState } from "react";
+import { Download, ExternalLink, Loader2 } from "lucide-react";
 import { formatFileSize, formatDate } from "../../utils/formatters";
+import { downloadFile, isExternalUrl } from "../../utils/download";
 import { FILE_TYPE_ICONS } from "../../utils/constants";
 import Card from "./Card";
 import Badge from "./Badge";
@@ -23,7 +25,21 @@ export default function FileCard({
   uploadDate,
   category,
 }: FileCardProps) {
+  const [isDownloading, setIsDownloading] = useState(false);
   const icon = FILE_TYPE_ICONS[fileType] || FILE_TYPE_ICONS.other;
+  const external = isExternalUrl(filePath);
+
+  const handleDownload = async (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (isDownloading) return;
+
+    setIsDownloading(true);
+    try {
+      await downloadFile(filePath, `${name}.${fileType}`);
+    } finally {
+      setIsDownloading(false);
+    }
+  };
 
   return (
     <Card hover className="p-5 flex items-start gap-4 group">
@@ -39,6 +55,9 @@ export default function FileCard({
             {name}
           </h3>
           <Badge>{category}</Badge>
+          {external && (
+            <Badge variant="primary">外链</Badge>
+          )}
         </div>
         <p className="text-sm text-text-secondary mb-2 line-clamp-2">
           {description}
@@ -50,15 +69,21 @@ export default function FileCard({
         </div>
       </div>
 
-      {/* Download */}
-      <a
-        href={filePath}
-        download
-        className="flex-shrink-0 p-2.5 bg-primary/10 text-primary rounded-xl hover:bg-primary hover:text-white transition-all duration-300 group/btn"
-        title="下载文件"
+      {/* Download / Open */}
+      <button
+        onClick={handleDownload}
+        disabled={isDownloading}
+        className="flex-shrink-0 p-2.5 bg-primary/10 text-primary rounded-xl hover:bg-primary hover:text-white transition-all duration-300 group/btn disabled:opacity-50 disabled:cursor-not-allowed"
+        title={external ? "下载文件（外部链接）" : "下载文件"}
       >
-        <Download size={20} className="group-hover/btn:scale-110 transition-transform" />
-      </a>
+        {isDownloading ? (
+          <Loader2 size={20} className="animate-spin" />
+        ) : external ? (
+          <ExternalLink size={20} className="group-hover/btn:scale-110 transition-transform" />
+        ) : (
+          <Download size={20} className="group-hover/btn:scale-110 transition-transform" />
+        )}
+      </button>
     </Card>
   );
 }
