@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>未央书院58班 | 清华大学</title>
+  <script>
+    // SessionStorage redirect for GitHub Pages SPA fallback
+    (function(l) {
+      var path = l.pathname;
+      if (path === "/" || path === "/index.html") return;
+      var repo = "/Thu-Weiyang58";
+      var redirect = path.startsWith(repo) ? path.slice(repo.length) || "/" : path;
+      sessionStorage.redirect = redirect;
+      l.replace(repo + "/");
+    })(window.location);
+  </script>
+</head>
+<body></body>
+</html>

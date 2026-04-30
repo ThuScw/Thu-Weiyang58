@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "title": "开学典礼合影",
+    "description": "2025年秋季学期开学典礼全班合影",
+    "imagePath": "/images/gallery/photo-01.jpg",
+    "thumbnailPath": "/images/gallery/thumb/photo-01.jpg",
+    "date": "2025-09-01",
+    "category": "集体活动"
+  },
+  {
+    "id": "2",
+    "title": "香山秋游",
+    "description": "秋日香山团建活动，登山赏红叶",
+    "imagePath": "/images/gallery/photo-02.jpg",
+    "thumbnailPath": "/images/gallery/thumb/photo-02.jpg",
+    "date": "2025-10-20",
+    "category": "文体活动"
+  },
+  {
+    "id": "3",
+    "title": "元旦晚会精彩瞬间",
+    "description": "元旦联欢晚会节目表演",
+    "imagePath": "/images/gallery/photo-03.jpg",
+    "thumbnailPath": "/images/gallery/thumb/photo-03.jpg",
+    "date": "2025-12-20",
+    "category": "文体活动"
+  },
+  {
+    "id": "4",
+    "title": "运动会风采",
+    "description": "春季运动会班级运动员风采",
+    "imagePath": "/images/gallery/photo-04.jpg",
+    "thumbnailPath": "/images/gallery/thumb/photo-04.jpg",
+    "date": "2026-04-01",
+    "category": "文体活动"
+  },
+  {
+    "id": "5",
+    "title": "志愿服务日",
+    "description": "学雷锋志愿服务日社区活动",
+    "imagePath": "/images/gallery/photo-05.jpg",
+    "thumbnailPath": "/images/gallery/thumb/photo-05.jpg",
+    "date": "2026-03-05",
+    "category": "志愿活动"
+  },
+  {
+    "id": "6",
+    "title": "学习经验分享会",
+    "description": "期中学习经验分享会现场",
+    "imagePath": "/images/gallery/photo-06.jpg",
+    "thumbnailPath": "/images/gallery/thumb/photo-06.jpg",
+    "date": "2025-11-05",
+    "category": "学术活动"
+  }
+]

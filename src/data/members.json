@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "name": "张明远",
+    "role": "班长",
+    "avatar": "/images/members/avatar-01.jpg",
+    "bio": "来自江苏南京，热爱篮球和编程，希望能带领58班成为最优秀的班集体。",
+    "tags": ["组织能力", "责任心", "篮球"],
+    "contact": { "email": "zhangmy@mails.tsinghua.edu.cn", "wechat": "mingyuan_zhang" }
+  },
+  {
+    "id": "2",
+    "name": "李思涵",
+    "role": "团支书",
+    "avatar": "/images/members/avatar-02.jpg",
+    "bio": "北京人，喜欢读书和摄影，致力于建设有温度、有思想的班级文化。",
+    "tags": ["思想引领", "摄影", "阅读"],
+    "contact": { "email": "lisihan@mails.tsinghua.edu.cn", "wechat": "sihan_li" }
+  },
+  {
+    "id": "3",
+    "name": "王子轩",
+    "role": "学习委员",
+    "avatar": "/images/members/avatar-03.jpg",
+    "bio": "来自浙江杭州，GPA年级前十，乐于为同学们解答学业疑惑，组织学习小组。",
+    "tags": ["学术达人", "耐心", "数学"],
+    "contact": { "email": "wangzx@mails.tsinghua.edu.cn", "wechat": "zixuan_wang" }
+  },
+  {
+    "id": "4",
+    "name": "陈雨萱",
+    "role": "文体委员",
+    "avatar": "/images/members/avatar-04.jpg",
+    "bio": "四川成都人，校舞蹈队成员，组织班级各类文体活动，让大学生活更加丰富多彩。",
+    "tags": ["舞蹈", "活动策划", "开朗"],
+    "contact": { "email": "chenyx@mails.tsinghua.edu.cn", "wechat": "yuxuan_chen" }
+  },
+  {
+    "id": "5",
+    "name": "刘浩然",
+    "role": "同学",
+    "avatar": "/images/members/avatar-05.jpg",
+    "bio": "来自湖南长沙，ACM竞赛集训队成员，热爱算法与数据结构。",
+    "tags": ["编程", "算法", "竞赛"],
+    "contact": { "email": "liuhr@mails.tsinghua.edu.cn", "wechat": "" }
+  },
+  {
+    "id": "6",
+    "name": "赵雪莹",
+    "role": "同学",
+    "avatar": "/images/members/avatar-06.jpg",
+    "bio": "山东济南人，学生会外联部干事，擅长沟通与对外联络。",
+    "tags": ["沟通达人", "外联", "志愿服务"],
+    "contact": { "email": "zhaoxy@mails.tsinghua.edu.cn", "wechat": "" }
+  }
+]

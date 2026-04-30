@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "title": "校级优秀班集体",
+    "category": "集体荣誉",
+    "date": "2025-12",
+    "description": "在2025年度校级先进班集体评选中，未央书院58班以优异的综合表现获得'校级优秀班集体'荣誉称号，这是对全班同学共同努力的肯定。",
+    "image": "/images/gallery/achievement-01.jpg",
+    "highlight": true
+  },
+  {
+    "id": "2",
+    "title": "甲级团支部",
+    "category": "集体荣誉",
+    "date": "2025-06",
+    "description": "荣获2024-2025学年度清华大学甲级团支部称号，表彰班级团支部在思想引领、组织建设、社会实践等方面的突出表现。",
+    "image": "/images/gallery/achievement-02.jpg",
+    "highlight": true
+  },
+  {
+    "id": "3",
+    "title": "校运动会团体总分第三名",
+    "category": "集体荣誉",
+    "date": "2025-04",
+    "description": "在清华大学第68届'马约翰杯'田径运动会中，58班代表队团结拼搏，获得院系团体总分第三名的优异成绩。",
+    "image": "/images/gallery/achievement-03.jpg",
+    "highlight": false
+  },
+  {
+    "id": "4",
+    "title": "国家奖学金",
+    "category": "个人荣誉",
+    "date": "2025-10",
+    "description": "班级同学荣获2024-2025学年度国家奖学金，彰显了班级在学术方面的卓越追求和突出表现。",
+    "image": "",
+    "highlight": true
+  },
+  {
+    "id": "5",
+    "title": "清华挑战杯二等奖",
+    "category": "学术成果",
+    "date": "2025-05",
+    "description": "班级科研团队在清华大学第43届'挑战杯'学生课外学术科技作品竞赛中获得二等奖，项目方向为人工智能与教育融合。",
+    "image": "/images/gallery/achievement-05.jpg",
+    "highlight": false
+  },
+  {
+    "id": "6",
+    "title": "优秀社会实践支队",
+    "category": "集体荣誉",
+    "date": "2025-08",
+    "description": "暑期社会实践支队获评校级优秀支队，深入西部地区开展乡村振兴调研，形成高质量调研报告。",
+    "image": "/images/gallery/achievement-06.jpg",
+    "highlight": false
+  }
+]

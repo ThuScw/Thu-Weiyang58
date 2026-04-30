@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-light text-text-primary;
+    cursor: default;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F8FAFC;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #0D7377, #14B8A6);
+    border-radius: 4px;
+  }
+
+  /* Selection */
+  ::selection {
+    background: rgba(13, 115, 119, 0.2);
+    color: #0F172A;
+  }
+}
+
+@layer components {
+  /* Glass morphism utility */
+  .glass {
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(13, 115, 119, 0.08);
+  }
+
+  .glass-dark {
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  /* Gradient text - cyan to purple */
+  .gradient-text {
+    background: linear-gradient(135deg, #0D7377 0%, #14B8A6 40%, #6D28D9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Gold accent text */
+  .gold-text {
+    color: #C9A84C;
+  }
+
+  /* Cyan accent text */
+  .cyan-text {
+    background: linear-gradient(135deg, #0D7377, #14B8A6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Hover lift */
+  .hover-lift {
+    @apply transition-all duration-300;
+  }
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(13, 115, 119, 0.12);
+  }
+
+  /* Card base - refined */
+  .card-base {
+    @apply bg-white rounded-2xl border border-gray-100 overflow-hidden
+           shadow-sm hover:shadow-lg transition-shadow duration-300;
+  }
+
+  /* Card with decorative top border */
+  .card-accented {
+    @apply card-base border-t-2;
+  }
+
+  /* Page section */
+  .page-section {
+    @apply py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto;
+  }
+
+  /* Page heading */
+  .page-heading {
+    @apply font-heading text-4xl md:text-5xl font-bold text-center mb-4;
+  }
+
+  .page-subheading {
+    @apply text-text-secondary text-center text-lg max-w-2xl mx-auto mb-16;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-xl font-medium
+           hover:bg-primary-light transition-all duration-300
+           hover:shadow-lg hover:shadow-primary/25
+           active:scale-95;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary px-6 py-3 rounded-xl font-medium
+           hover:bg-primary hover:text-white transition-all duration-300
+           active:scale-95;
+  }
+
+  /* Hero glow orbs */
+  .glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  /* Decorative divider */
+  .divider-ornament {
+    @apply flex items-center gap-3;
+  }
+  .divider-ornament::before,
+  .divider-ornament::after {
+    content: '';
+    @apply flex-1 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent;
+  }
+
+  /* Tag / chip */
+  .tag {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+    background-color: rgba(13, 115, 119, 0.08);
+    color: #0D7377;
+    border: 1px solid rgba(13, 115, 119, 0.1);
+  }
+}
+
+@layer utilities {
+  /* Perspective for flip cards */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+}
+
+/* Loading skeleton animation */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Line clamp */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Particle canvas layer */
+.particle-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
