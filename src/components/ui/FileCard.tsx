@@ -56,7 +56,7 @@ export default function FileCard({
           </h3>
           <Badge>{category}</Badge>
           {external && (
-            <Badge variant="primary">外链</Badge>
+            <Badge variant="outline">外链</Badge>
           )}
         </div>
         <p className="text-sm text-text-secondary mb-2 line-clamp-2">
