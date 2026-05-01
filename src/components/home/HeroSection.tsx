@@ -75,6 +75,20 @@ export default function HeroSection() {
           </span>
         </motion.div>
 
+        {/* Class logo */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.15 }}
+          className="mb-6"
+        >
+          <img
+            src="/logo.svg"
+            alt="班徽"
+            className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mx-auto drop-shadow-2xl"
+          />
+        </motion.div>
+
         {/* Main title */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}

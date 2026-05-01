@@ -46,6 +46,13 @@ export default {
           '"Microsoft YaHei"',
           "sans-serif",
         ],
+        cute: [
+          '"ZCOOL KuaiLe"',
+          '"Ma Shan Zheng"',
+          '"PingFang SC"',
+          '"Microsoft YaHei"',
+          "cursive",
+        ],
         mono: ['"JetBrains Mono"', '"Fira Code"', "monospace"],
       },
       animation: {

@@ -34,9 +34,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 bg-gradient-to-br from-primary via-primary-light to-accent rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-md shadow-primary/20 group-hover:shadow-lg group-hover:shadow-primary/30 transition-all duration-300 group-hover:scale-105">
-            58
-          </div>
+          <img
+            src="/logo.svg"
+            alt="班徽"
+            className="w-10 h-10 rounded-xl shadow-md shadow-primary/20 group-hover:shadow-lg group-hover:shadow-primary/30 transition-all duration-300 group-hover:scale-105"
+          />
           <span
             className={`font-heading text-xl font-bold transition-colors duration-300 ${
               isLight ? "text-white" : "text-text-primary"

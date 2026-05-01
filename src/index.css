@@ -12,6 +12,16 @@
     cursor: default;
   }
 
+  /* Small text uses cute handwriting font */
+  p, span, a, li, td, th, label, input, textarea, button, .font-cute {
+    font-family: "ZCOOL KuaiLe", "Ma Shan Zheng", "PingFang SC", "Microsoft YaHei", cursive;
+  }
+
+  /* Headings keep standard serif font */
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: "Noto Serif SC", "Source Han Serif SC", Georgia, serif;
+  }
+
   /* Custom scrollbar */
   ::-webkit-scrollbar {
     width: 8px;

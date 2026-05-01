@@ -13,9 +13,11 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-11 h-11 bg-gradient-to-br from-primary via-primary-light to-accent rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-primary/20">
-                58
-              </div>
+              <img
+                src="/logo.svg"
+                alt="班徽"
+                className="w-11 h-11 rounded-xl shadow-lg shadow-primary/20"
+              />
               <span className="font-heading text-xl font-bold">
                 {siteConfig.classFullName}
               </span>

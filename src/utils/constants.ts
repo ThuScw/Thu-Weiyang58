@@ -1,7 +1,6 @@
 export const NAV_LINKS = [
   { label: "首页", path: "/" },
   { label: "班级成果", path: "/achievements" },
-  { label: "班级成员", path: "/members" },
   { label: "活动时间线", path: "/activities" },
   { label: "通知公告", path: "/announcements" },
   { label: "专栏文章", path: "/articles" },
