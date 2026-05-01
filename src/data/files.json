@@ -68,5 +68,45 @@
     "fileSize": 2097152,
     "fileType": "pdf",
     "uploadDate": "2025-09-01"
+  },
+  {
+    "id": "8",
+    "name": "2025-2026春退课安排",
+    "description": "本科生及研究生退课时间安排与操作流程，来源于清华大学信息门户",
+    "category": "学业通知",
+    "filePath": "/files/2025-2026春_本科生_研究生退课安排.pdf",
+    "fileSize": 524288,
+    "fileType": "pdf",
+    "uploadDate": "2026-04-15"
+  },
+  {
+    "id": "9",
+    "name": "2026年NECCS初赛成绩",
+    "description": "全国大学生英语竞赛初赛（清华大学）成绩公布，来源于清华大学信息门户",
+    "category": "学业通知",
+    "filePath": "/files/2026年全国大学生英语竞赛初赛成绩公布.pdf",
+    "fileSize": 786432,
+    "fileType": "pdf",
+    "uploadDate": "2026-04-20"
+  },
+  {
+    "id": "10",
+    "name": "五一假期交通管制提示",
+    "description": "关于五一假期西门外实施临时交通管制的提示，来源于清华大学信息门户",
+    "category": "校园通知",
+    "filePath": "/files/关于五一假期西门外实施临时交通管制的提示.pdf",
+    "fileSize": 393216,
+    "fileType": "pdf",
+    "uploadDate": "2026-04-25"
+  },
+  {
+    "id": "11",
+    "name": "清华大学2025-2026学年校历",
+    "description": "2025-2026学年春秋季学期校历，包含开学、放假、考试等重要时间节点",
+    "category": "学业通知",
+    "filePath": "/images/gallery/校历.jpg",
+    "fileSize": 1048576,
+    "fileType": "jpg",
+    "uploadDate": "2025-09-01"
   }
 ]

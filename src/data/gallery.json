@@ -52,5 +52,14 @@
     "thumbnailPath": "/images/gallery/thumb/photo-06.jpg",
     "date": "2025-11-05",
     "category": "学术活动"
+  },
+  {
+    "id": "7",
+    "title": "2025-2026学年校历",
+    "description": "2025-2026学年春秋季学期校历，包含开学、放假、考试等重要时间节点",
+    "imagePath": "/images/gallery/校历.jpg",
+    "thumbnailPath": "/images/gallery/校历.jpg",
+    "date": "2025-09-01",
+    "category": "校园资讯"
   }
 ]
